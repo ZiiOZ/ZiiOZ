@@ -1,12 +1,9 @@
-import { Route } from 'wouter';
-import Home from './pages/Home';
-import SimpleCheckout from './pages/SimpleCheckout';
-
 export default function App() {
-  return (
-    <>
-      <Route path="/" component={() => <Home />} />
-      <Route path="/checkout" component={() => <SimpleCheckout />} />
-    </>
-  );
-}
+    return (
+      <div style={{ textAlign: 'center', marginTop: '50px' }}>
+        <h1>🚀 ZiiOZ is Live!</h1>
+        <p>You've reached the homepage.</p>
+      </div>
+    );
+  }
+  
