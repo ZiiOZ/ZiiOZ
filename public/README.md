@@ -1,15 +1,13 @@
 # ZiiOZ
 
-**ZiiOZ** is a social content platform built with:
+ZiiOZ is a social content platform built with:
 
-- ⚡️ Vite
-- ⚛️ React
-- ⌨️ TypeScript
-- 🌐 Wouter (lightweight routing)
+- Vite
+- React
+- TypeScript
+- Wouter
 
-## 🚀 Getting Started
-
-To run this project locally:
+## Development
 
 ```bash
 npm install
