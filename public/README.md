@@ -12,3 +12,4 @@ ZiiOZ is a social content platform built with:
 ```bash
 npm install
 npm run dev
+!-- trigger redeploy -->
