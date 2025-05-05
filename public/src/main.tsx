@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/App'; // ✅ Make sure this path is correct!
+import App from './pages/App';
 
-const rootElement = document.getElementById('root');
-
-if (rootElement) {
-  ReactDOM.createRoot(rootElement).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} else {
-  console.error("❌ Root element not found!");
-}
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
