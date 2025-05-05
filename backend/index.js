@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 10000;
 
 app.use(cors());
 
-// ✅ Test Route
+// ✅ THIS ROUTE MUST BE PRESENT
 app.get('/api/hello', (req, res) => {
-  res.send('Hello from the backend');
+  res.json({ message: 'Hello from the backend!' });
 });
 
 app.listen(PORT, () => {
