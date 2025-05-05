@@ -1,14 +1,16 @@
 const express = require('express');
 const cors = require('cors');
+
 const app = express();
+const PORT = process.env.PORT || 10000;
 
 app.use(cors());
 
+// ✅ Test Route
 app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from the ZiiOZ backend!' });
+  res.send('Hello from the backend');
 });
 
-const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`ZiiOZ backend is live on port ${PORT}`);
 });
