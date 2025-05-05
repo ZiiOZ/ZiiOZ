@@ -1,17 +1,13 @@
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [message, setMessage] = useState("Loading...");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-    const BASE = import.meta.env.VITE_API_BASE_URL;
-    fetch(`${BASE}/api/hello`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/hello`)
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
-      .catch((err) => {
-        console.error("API fetch failed:", err);
-        setMessage("Error connecting to backend.");
-      });
+      .catch((err) => setMessage("Failed to fetch from backend"));
   }, []);
 
   return (
