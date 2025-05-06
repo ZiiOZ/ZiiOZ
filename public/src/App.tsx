@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>ZiiOZ Frontend is Working!</h1>
-      <p>If you see this, your Vercel deploy is now rendering properly.</p>
+    <div>
+      <h1>Welcome to ZiiOZ</h1>
+      <p>This is your React + TypeScript + Vite app.</p>
     </div>
   );
-}
+};
+
+export default App;
