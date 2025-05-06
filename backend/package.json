@@ -1,0 +1,29 @@
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+app.use(cors());
+app.use(express.json());
+
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from ZiiOZ backend!" });
+});
+
+app.listen(PORT, () => {
+  console.log(`ZiiOZ backend is live on port ${PORT}`);
+});
+{
+    "name": "ziioz-backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "cors": "^2.8.5"
+    }
+  }
+  
