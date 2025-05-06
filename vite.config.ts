@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 export default defineConfig({
-  root: '.', // Make sure Vite starts at the root where index.html is
+  root: '.', // Important: this is where index.html is
   plugins: [react()],
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './index.html' // Explicitly tell Vite what the entry file is
+      input: resolve(__dirname, 'index.html') // <--- Full path to entry HTML
     }
   }
 });
